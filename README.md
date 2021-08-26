@@ -22,3 +22,9 @@ net start winnat
                 fields=["title"], name="NewGinIndex", opclasses=["gin_trgm_ops"]
             ),
         ),
+        
+       
+# load json data into postgres database Usually you use django-admin.py to start a new project or application and manage.py to do the rest.
+
+django-admin loaddata mydata.json
+python manage.py loaddata mydata.json
